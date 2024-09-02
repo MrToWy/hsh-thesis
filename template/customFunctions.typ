@@ -86,30 +86,6 @@
 ]
 
 
-#show figure: set block(breakable: true)
-#let anforderung(funktional: true) = [
-  #let prefix = if(funktional) {"F"} else {"N"}
-  
-  #figure(caption: if funktional {"Funktionale Anforderungen"} else {"Nicht-Funktionale Anforderungen"})[
-
-  #show table.cell.where(x: 0): set text(weight: "bold")
-    #let results = if(funktional) {csv("../anforderungen.csv")} else {csv("../nichtFuntionaleAnforderugen.csv")} 
-    #let counter = 1
-    
-    #table(
-      columns: (1fr, 9fr),
-      fill: (x, y) => if calc.even(x) { rgb("E28862") } else { rgb("EEC0AB") },
-      stroke: (x: none, y: 2.5pt + rgb("FFFF")),
-      [*Name*], [*Beschreibung*],
-      
-      ..results.enumerate(start: 1).map(((i, row)) => ([#prefix#(i)#label(row.first())], 
-      row.last()
-      
-      )).flatten(),
-    )
-  ]
-]
-
 
 
 #let attributedQuote(label, body) = [
@@ -130,7 +106,7 @@
     caption: caption,
     kind: "diagram",
     supplement: [Diagramm],
-    include "../Diagrams/" + (if (rendered){"rendered/"} else {""}) + filename + ".typ"
+    include "Diagrams/" + (if (rendered){"rendered/"} else {""}) + filename + ".typ"
   ) #plabel
 ]]
 
@@ -144,7 +120,7 @@
     caption: caption,
     kind: "code",
     supplement: [Code],
-    include "../Code/" + filename + ".typ"
+    include "Code/" + filename + ".typ"
   ) #plabel
 ]]
 
@@ -152,7 +128,7 @@
   #align(center)[
   #pad(left: sidePadding, right: sidePadding, rest: topBotPadding)[
   #figure(
-    image("../Images/" + filename, height: height, width: width),
+    image("Images/" + filename, height: height, width: width),
     caption: pCaption
   ) #plabel
 ]]]
@@ -160,7 +136,7 @@
 #let imageFigureNoPad(plabel, filename, pCaption, height: auto, width: auto) = [
   #align(center)[
   #figure(
-    image("../Images/" + filename, height: height, width: width),
+    image("Images/" + filename, height: height, width: width),
     caption: pCaption
   ) #plabel
 ]]

@@ -1,16 +1,16 @@
 # for a description of available keys, see https://github.com/typst/packages/?tab=readme-ov-file#package-format
 
 [package]
-name = ""
-version = "0.1.0"
+name = "hsh-thesis"
+version = "1.0.0"
 entrypoint = "src/lib.typ"
-authors = []
+authors = ["Tobias Wylega <https://github.com/MrToWy>"]
 license = "Unlicense"
 description = ""
 homepage = ""
 repository = ""
-keywords = []
-categories = []
+keywords = ["thesis", "hsh", "Hochschule Hannover"]
+categories = ["thesis"]
 disciplines = []
 compiler = ""
 exclude = [
@@ -22,9 +22,9 @@ exclude = [
 	"Justfile",
 ]
 
-# [template]
-# path = "template"
-# entrypoint = "main.typ"
+[template]
+path = "template"
+entrypoint = "main.typ"
 # thumbnail = "thumbnail.png"
 
 # [tool.mytool]

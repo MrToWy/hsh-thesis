@@ -1,0 +1,28 @@
+harry:
+    type: Book
+    title: Harry Potter and the Order of the Phoenix
+    author: Rowling, J. K.
+    volume: 5
+    page-total: 768
+    date: 2003-06-21
+
+electronic:
+    type: Web
+    title: Ishkur's Guide to Electronic Music
+    serial-number: v2.5
+    author: Ishkur
+    url: http://www.techno.org/electronic-music-guide/
+
+studAkkVO:
+    type: legislation
+    title: Niedersächsisches Gesetz- und Verordnungsblatt
+    volume: 5321
+    date: 2019-08-09
+
+btpo:
+    type: legislation
+    title: Besonderer Teil der Prüfungsordnung für den Bachelor-Studiengang Mediendesigninformatik (MDI) mit dem Abschluss Bachelor of Science der Fakultät IV – Wirtschaft und Informatik, Abteilung Informatik der Hochschule Hannover
+    volume: 07/2023
+    date: 2023-06-01
+    author: Dezernat 3
+    

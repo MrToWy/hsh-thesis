@@ -12,7 +12,7 @@ repository = ""
 keywords = ["thesis", "hsh", "Hochschule Hannover"]
 categories = ["thesis"]
 disciplines = []
-compiler = ""
+compiler = "0.11.1"
 exclude = [
 	".github",
 	"docs",

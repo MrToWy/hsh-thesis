@@ -1,4 +1,4 @@
-#import "../Template/customFunctions.typ": *
+#import "../customFunctions.typ": *
 
 
 

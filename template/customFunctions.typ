@@ -1,6 +1,5 @@
 #import "@preview/gloss-awe:0.0.5": *
-#import "../abbreviations.typ": *
-#import "../glossary.typ": *
+#import "abbreviations.typ": *
 #import "@preview/treet:0.1.0": *
 #import "@preview/big-todo:0.2.0": *
 #import "@preview/gentle-clues:0.9.0": *

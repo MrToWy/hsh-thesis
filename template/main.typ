@@ -1,4 +1,4 @@
-#import "Template/template.typ": *
+#import "@preview/hsh-thesis:1.0.0": *
 
 #show: project.with(
   title: "Konzeption und Entwicklung eines Systems zur Verwaltung und Erstellung von Modulhandbüchern",

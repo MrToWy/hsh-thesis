@@ -1,4 +1,15 @@
-#import "customFunctions.typ": *
+#import "@preview/hydra:0.3.0": hydra
+#import "@preview/codly:1.0.0": *
+
+#let smallLine = line(length: 100%, stroke: 0.045em)
+
+#let getCurrentHeadingHydra(loc, topLevel: false, topMargin) = {
+    if(topLevel){
+      return hydra(1, top-margin:topMargin)
+    }
+
+    return hydra(2, top-margin:topMargin)
+}
 
 #show par: it => [#it <meta:content>]
 

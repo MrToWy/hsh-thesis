@@ -73,7 +73,6 @@
       columns: (0.4fr, 1fr),
       fill: (x, y) => if calc.even(x) { useCaseColor } else { useCaseColorLight },
       stroke: (x: none, y: 2.5pt + rgb("FFFF")),
-  
 
       [Name], text([UC] + str(nummer) + " - " + name, weight: "semibold"),
       [Kurzbeschreibung], kurzbeschreibung,
@@ -84,8 +83,6 @@
     )
   ]]]
 ]
-
-
 
 
 #let attributedQuote(label, body) = [
@@ -109,8 +106,6 @@
     include "Diagrams/" + (if (rendered){"rendered/"} else {""}) + filename + ".typ"
   ) #plabel
 ]]
-
-
 
 
 #let codeFigure(caption, plabel, filename, annotations: none) = [
@@ -148,8 +143,6 @@
 #align(left)[
 #tree-list(content)]] #pLabel ]]
 ]
-
-
 
 // header
 

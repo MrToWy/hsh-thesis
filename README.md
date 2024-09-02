@@ -1,18 +1,10 @@
-# The `my-package` Package
-<div align="center">Version 0.1.0</div>
+# The `hsh-thesis` Package
+<div align="center">Version 1.0.0</div>
 
 A short description about the project and/or client.
 
 ## Template adaptation checklist
 
-- [ ] Fill out `README.md`
-  - Change the `my-package` package name, including code snippets
-  - Check section contents and/or delete sections that don't apply
-- [ ] Check and/or replace `LICENSE` by something that suits your needs
-- [ ] Fill out `typst.toml`
-  - See also the [typst/packages README](https://github.com/typst/packages/?tab=readme-ov-file#package-format)
-- [ ] Adapt Repository URLs in `CHANGELOG.md`
-  - Consider only committing that file with your first release, or removing the "Initial Release" part in the beginning
 - [ ] Adapt or deactivate the release workflow in `.github/workflows/release.yml`
   - to deactivate it, delete that file or remove/comment out lines 2-4 (`on:` and following)
   - to use the workflow
@@ -27,38 +19,23 @@ A short description about the project and/or client.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on the typst web app. Perhaps a short code example on importing the package and a very simple teaser usage.
+### WebApp
+Choose the template in the typst web app and follow the instructions there.
 
-```typ
-#import "@preview/my-package:0.1.0": *
-
-#show: my-show-rule.with()
-#my-func()
+### Terminal
+```bash
+typst init @preview/hsh-thesis:1.0.0
 ```
 
-### Installation
+### Development Environment
 
-A step by step guide that will tell you how to get the development environment up and running. This should example how to clone the repo and where to (maybe a link to the typst documentation on it), along with any pre-requisite software and installation steps.
+1. Install Typst https://github.com/typst-community/typst-install
+2. Clone the repository
+3. CD into the repository
+4. Run `git pull && just install && just install-preview` to install/update the template
+5. Run `typst init @local/hsh-thesis:1.0.0 && typst compile hsh-thesis/main.typ` to compile the template
 
-```
-$ First step
-$ Another step
-$ Final step
-```
 
-## Usage
+## Additional Documentation
 
-A more in-depth description of usage. Any template arguments? A complicated example that showcases most if not all of the functions the package provides? This is also an excellent place to signpost the manual.
-
-```typ
-#import "@preview/my-package:0.1.0": *
-
-#let my-complicated-example = ...
-```
-
-## Additional Documentation and Acknowledgments
-
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
+Take a look at this complete Bachelor's thesis example using the `hsh-thesis` template: [Bachelor's Thesis Example](https://github.com/MrToWy/Bachelorarbeit)

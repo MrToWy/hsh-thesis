@@ -1,4 +1,4 @@
-# [unreleased](https://github.com/<author>/<my-package>/releases/tag/<the-tag>)
+# [unreleased](https://github.com/MrToWy/hsh-thesis/releases/tag/<the-tag>)
 ## Added
 
 ## Removed
@@ -9,5 +9,5 @@
 
 ---
 
-# [v0.1.0](https://github.com/<author>/<my-package>/releases/tag/v0.1.0)
+# [v1.0.0](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.0.0)
 Initial Release

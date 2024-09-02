@@ -20,7 +20,8 @@
     #link("mailto:matthias.hovestadt@hs-hannover.de")
   ],
   date: "13. August 2024",
-  glossaryColumns: 1
+  glossaryColumns: 1,
+  bibliography: bibliography(("sources.bib", "sources.yaml"), style: "institute-of-electrical-and-electronics-engineers", title: "Literaturverzeichnis")
 )
 
 

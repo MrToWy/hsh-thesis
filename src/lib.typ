@@ -25,6 +25,7 @@
   glossaryColumns: 1,
   enableGlossary: false,
   enableAbbildungsverzeichnis: false,
+  bibliography: none,
   body,
 ) = {
   // Set the document's basic properties.
@@ -255,7 +256,9 @@ pagebreak()
   set page(header: none)
 
   // bibliography
-  bibliography(("../sources.bib", "../sources.yaml"), style: "institute-of-electrical-and-electronics-engineers", title: "Literaturverzeichnis")
+  if bibliography != none {
+    bibliography
+  }
 
   pagebreak()
   hide("white page")

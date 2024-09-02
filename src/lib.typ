@@ -18,6 +18,8 @@
   subtitle: "",
   author: "",
   author_email: "",
+  logo_links: "Wortmarke.svg",
+  logo_rechts: "Logo.svg",
   matrikelnummer: 0,
   prof: none,
   second_prof: none,
@@ -103,7 +105,7 @@
 
   // Title page.
   v(0.6fr)
-  align(left, image("Wortmarke.svg", width: 26%))
+  align(left, image(logo_links, width: 26%))
   v(1.6fr)
 
 
@@ -115,7 +117,7 @@
   v(1.2em, weak: true)
   text(1.1em, date)
 
-  align(right, image("Logo.svg", width: 26%))
+  align(right, image(logo_rechts, width: 26%))
   pagebreak()
   pagebreak()
 

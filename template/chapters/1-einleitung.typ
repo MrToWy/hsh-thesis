@@ -6,7 +6,7 @@
 
 Ein vollständiges Beispiel ist auf GitHub zu finden: #link("https://github.com/MrToWy/Bachelorarbeit")[HIER KLICKEN].
 
-In diesem Template können sowohl .yaml-Dateien @harry, als auch .bib-Dateien @typst verwenden werden.
+In diesem Template für die #hsh können sowohl .yaml-Dateien @harry, als auch .bib-Dateien @typst verwenden werden.
 
 
 

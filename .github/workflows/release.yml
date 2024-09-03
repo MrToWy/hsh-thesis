@@ -71,7 +71,7 @@ jobs:
           cd typst-packages
           git config user.name "${GIT_USER_NAME}"
           git config user.email "${GIT_USER_EMAIL}"
-          git checkout -b "${PKG_NAME}-${PKG_VERSION}"
+          git checkout -B "${PKG_NAME}-${PKG_VERSION}"
           git add .
           git commit -m "${PKG_NAME}:${PKG_VERSION}"
           git push --set-upstream origin "${PKG_NAME}-${PKG_VERSION}"

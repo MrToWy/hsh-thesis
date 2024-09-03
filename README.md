@@ -69,7 +69,7 @@ typst init @preview/modern-hsh-thesis:1.0.0
 2. Clone the repository
 3. CD into the repository
 4. Run `git pull && just install && just install-preview` to install/update the template
-5. Run `typst init @local/modern-hsh-thesis:1.0.0 && typst compile hsh-thesis/main.typ` to compile the template
+5. Run `typst init @local/modern-hsh-thesis:1.0.0 && typst compile modern-hsh-thesis/main.typ` to compile the template
 
 
 ## Additional Documentation

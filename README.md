@@ -13,6 +13,36 @@ Choose the template in the typst web app and follow the instructions there.
 typst init @preview/hsh-thesis:1.0.0
 ```
 
+### Import
+```typ
+#import "@preview/hsh-thesis:1.0.0": *
+
+#show: project.with(
+  title: "Beispiel-Titel",
+  subtitle: "Bachelorarbeit im Studiengang Mediendesigninformatik",
+  author: "Vorname Nachname",
+  author_email: "vorname@nachname.tld",
+  matrikelnummer: 1234567,
+  prof: [
+    Prof. Dr. Vorname Nachname\
+    Abteilung Informatik, Fakultät IV\
+    Hochschule Hannover\    
+    #link("mailto:vorname.nachname@hs-hannover.de")
+    
+  ],
+  second_prof: [
+    Prof. Dr. Vorname Nachname\
+    Abteilung Informatik, Fakultät IV\
+    Hochschule Hannover\    
+    #link("mailto:vorname.nachname@hs-hannover.de")
+  ],
+  date: "01. August 2024",
+  glossaryColumns: 1,
+  bibliography: bibliography(("sources.bib", "sources.yaml"), style: "institute-of-electrical-and-electronics-engineers", title: "Literaturverzeichnis")
+)
+```
+
+
 ### Development Environment
 
 1. Install Typst https://github.com/typst-community/typst-install

@@ -45,21 +45,21 @@ typst init @preview/hsh-thesis:1.0.0
 ### Additional functions
 `customFunctions.typ` contains additional functions that can be used in the template.
 
-#smallLine: A small line that can be used to separate sections.
+`#smallLine`: A small line that can be used to separate sections.
 
-#task: A card that can be used to create a list of tracks (see example in 1-einleitung.typ).
+`#task`: A card that can be used to create a list of tracks (see example in 1-einleitung.typ).
 
-#track or #narrowTrack: A track that can be displayed inside a task (see example in 1-einleitung.typ).
+`#track` or `##narrowTrack`: A track that can be displayed inside a task (see example in 1-einleitung.typ).
 
-#useCase: Display a Use Case (see example in 1-einleitung.typ).
+`#useCase`: Display a Use Case (see example in 1-einleitung.typ).
 
-#attributedQuote: Display a quote with an attribution.
+`#attributedQuote`: Display a quote with an attribution.
 
-#diagramFigure, #codeFigure, #imageFigure, #treeFigure: Wrap an image/code/diagram/tree-list in a figure with a caption.
+`#diagramFigure`, `#codeFigure`, `#imageFigure`, `#treeFigure`: Wrap an image/code/diagram/tree-list in a figure with a caption.
 
-#imageFigureNoPad: Display a figure without padding.
+`#imageFigureNoPad`: Display a figure without padding.
 
-#getCurrentHeadingHydra, #getCurrentHeading: Get the heading of the current page.
+`#getCurrentHeadingHydra`, `#getCurrentHeading`: Get the heading of the current page.
 
 
 

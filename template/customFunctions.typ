@@ -4,7 +4,7 @@
 #import "@preview/big-todo:0.2.0": *
 #import "@preview/gentle-clues:0.9.0": *
 #import "@preview/wrap-it:0.1.0": wrap-content
-#import "@preview/hydra:0.3.0": hydra
+#import "@preview/hydra:0.5.1": hydra
 #import "@preview/codly:1.0.0": *
 
 #let colorize = true
@@ -139,38 +139,10 @@
 #tree-list(content)]] #p-label ]]
 ]
 
-#let get-current-heading-hydra(loc, top-level: false, top-margin) = {
+#let get-current-heading-hydra(top-level: false) = {
     if(top-level){
-      return hydra(1, top-margin:top-margin)
+      return hydra(1)
     }
 
-    return hydra(2, top-margin:top-margin)
-}
-
-#let get-current-heading(loc, top-level: false, top-margin) = {
-
-    let chapter-number = counter(heading).display()
-    if(top-level){
-      chapter-number = str(counter(heading).get().at(0))
-    }
-
-    let top-level-elems = query(
-      selector(heading).before(loc),
-      loc,
-    )
-
-    if(top-level){
-      top-level-elems = query(
-      selector(heading.where(level: 1)).before(loc),
-      loc,
-      )
-    }
-
-    let current-top-level-elem = ""
-
-    if top-level-elems != () {
-      current-top-level-elem = top-level-elems.last().body
-    }
-
-    return chapter-number + " " + current-top-level-elem
+    return hydra(2)
 }

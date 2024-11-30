@@ -69,7 +69,7 @@ While title, subtitle, author and many more parameters are self-explanatory, som
 
 `#imageFigureNoPad`: Display a figure without padding.
 
-`#getCurrentHeadingHydra`, `#getCurrentHeading`: Get the heading of the current page.
+`#getCurrentHeadingHydra`: Get the heading of the current page.
 
 
 

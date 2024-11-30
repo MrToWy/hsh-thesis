@@ -1,14 +1,14 @@
-#import "@preview/hydra:0.3.0": hydra
+#import "@preview/hydra:0.5.1": hydra
 #import "@preview/codly:1.0.0": *
 
 #let small-line = line(length: 100%, stroke: 0.045em)
 
-#let get-current-heading-hydra(loc, top-level: false, top-margin) = {
+#let get-current-heading-hydra(top-level: false) = {
     if(top-level){
-      return hydra(1, top-margin:top-margin)
+      return hydra(1)
     }
 
-    return hydra(2, top-margin:top-margin)
+    return hydra(2)
 }
 
 #show par: it => [#it <meta:content>]
@@ -32,9 +32,8 @@
   // Set the document's basic properties.
   set document(author: author, title: title)
   set page("a4")
-  let top-margin = 3.75cm
 
-  set page(margin: (inside: 3.5cm, outside: 2cm, y: top-margin))
+  set page(margin: (inside: 3.5cm, outside: 2cm, y: 3.75cm))
   //set page(margin: (inside: 2.75cm, outside: 2.75cm, y: 1.75cm))
 
   set par(justify: true)
@@ -207,39 +206,37 @@ pagebreak()
 
 
     // header
-    import "@preview/hydra:0.3.0": hydra
-    set page(header: locate(loc => {
+    set page(header: context{
 
       // dont print anything when the first element on the page is a level 1 heading
-      let chapter = hydra(1, loc: loc, top-margin: top-margin)
-      //chapter = get-current-heading-hydra(loc, top-margin)
+      let chapter = hydra(1)
 
       if(chapter == none){
         return
       }
 
 
-      if calc.even(loc.page()) {
-        align(left, smallcaps(get-current-heading-hydra(loc, top-level: true, top-margin)))
+      if calc.even(here().page()) {
+        align(left, smallcaps(get-current-heading-hydra(top-level: true)))
       }
       else{
-        align(right, emph(get-current-heading-hydra(loc, top-margin)))
+        align(right, emph(get-current-heading-hydra()))
       }
 
     small-line
-  }))
+  })
 
 
   // footer
-  set page(footer: locate(
-    loc => if calc.even(loc.page()) {
+  set page(footer: context{
+    if calc.even(here().page()) {
       small-line
       align(left, counter(page).display("1"));
     } else {
       small-line
       align(right, counter(page).display("1"));
     }
-  ))
+  })
 
   // ensure, that a
     show heading.where(level:1) : it => {

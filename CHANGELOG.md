@@ -1,6 +1,6 @@
 # [v1.0.1](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.0.1)
 ## Added
-- Parameter `start-chapter-on-new-page` with default value `true` to control whether a new chapter should start on a new page.
+- Optional Parameter `chapter-break-mode` to control whether a new chapter should start on a new page.
 
 
 ## Changed

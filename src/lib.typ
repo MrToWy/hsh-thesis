@@ -26,6 +26,7 @@
   enable-glossary: false,
   enable-abbildungsverzeichnis: false,
   bibliography: none,
+  chapter-break-mode: "default",
   body,
 ) = {
   // Set the document's basic properties.
@@ -240,8 +241,22 @@ pagebreak()
     }
   ))
 
-  // ensure, that a level 1 heading always starts on an empty page
-  show heading.where(level:1) : it => { pagebreak(weak:true, to: "even"); it}
+  // ensure, that a
+    show heading.where(level:1) : it => {
+        if chapter-break-mode == "default"{
+         //level 1 heading always starts on an empty, left page
+            pagebreak(weak:true, to: "even");
+        }
+        if chapter-break-mode == "recto"{
+         //level 1 heading always starts on an empty, right page
+            pagebreak(weak:true, to: "odd");
+        }
+        if chapter-break-mode == "next-page"{
+         //level 1 heading always starts on an empty page
+            pagebreak(weak:true);
+        }
+        it
+    }
 
 
   // Main body.

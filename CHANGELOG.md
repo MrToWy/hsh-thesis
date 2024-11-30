@@ -1,11 +1,14 @@
-# [unreleased](https://github.com/MrToWy/hsh-thesis/releases/tag/<the-tag>)
+# [v1.0.1](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.0.1)
 ## Added
+- Parameter `start-chapter-on-new-page` with default value `true` to control whether a new chapter should start on a new page.
 
-## Removed
 
 ## Changed
+- Upgraded Typst to version 0.12
 
-## Migration Guide from v0.1.X
+## Misc
+- Added "Just" install step to readme
+
 
 ---
 

@@ -1,5 +1,5 @@
 # The `modern-hsh-thesis` Package
-<div align="center">Version 1.0.0</div>
+<div align="center">Version 1.0.1</div>
 
 A template for writing a bachelors or masters thesis at the Hochschule Hannover, Faculty 4.
 
@@ -10,12 +10,12 @@ Choose the template in the typst web app and follow the instructions there.
 
 ### Terminal
 ```bash
-typst init @preview/modern-hsh-thesis:1.0.0
+typst init @preview/modern-hsh-thesis:1.0.1
 ```
 
 ### Import
 ```typ
-#import "@preview/modern-hsh-thesis:1.0.0": *
+#import "@preview/modern-hsh-thesis:1.0.1": *
 
 #show: project.with(
   title: "Beispiel-Titel",
@@ -42,6 +42,16 @@ typst init @preview/modern-hsh-thesis:1.0.0
 )
 ```
 
+#### Import parameter
+While title, subtitle, author and many more parameters are self-explanatory, some parameters require additional context to understand their full meaning and usage. 
+
+##### Parameter `chapter-break-mode` (optional, String)
+"**default**": Ensures each chapter begins on a left-hand page, potentially inserting an additional blank page if necessary \
+"**recto**": Ensures each chapter begins on a right-hand (recto) page, potentially inserting an additional blank page if necessary \
+"**next-page**": Forces a page break before starting each new chapter
+"**none**": Chapters continue on the current page without interruption
+
+
 ### Additional functions
 `customFunctions.typ` contains additional functions that can be used in the template.
 
@@ -65,11 +75,12 @@ typst init @preview/modern-hsh-thesis:1.0.0
 
 ### Development Environment
 
+0. Install Just `winget install --id Casey.Just --exact`
 1. Install Typst https://github.com/typst-community/typst-install
 2. Clone the repository
 3. CD into the repository
 4. Run `git pull && just install && just install-preview` to install/update the template
-5. Run `typst init @local/modern-hsh-thesis:1.0.0 && typst compile modern-hsh-thesis/main.typ` to compile the template
+5. Run `typst init @local/modern-hsh-thesis:1.0.1 && typst compile modern-hsh-thesis/main.typ` to compile the template
 
 
 ## Additional Documentation

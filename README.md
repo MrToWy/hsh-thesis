@@ -1,3 +1,9 @@
+# Contributions welcome
+
+All contributions (no matter if small) are always welcome.
+
+To see how you can help and where to start [see Contributing file](CONTRIBUTING.md).
+
 # The `modern-hsh-thesis` Package
 <div align="center">Version 1.0.1</div>
 

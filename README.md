@@ -5,7 +5,7 @@ All contributions (no matter if small) are always welcome.
 To see how you can help and where to start [see Contributing file](CONTRIBUTING.md).
 
 # The `modern-hsh-thesis` Package
-<div align="center">Version 1.0.1</div>
+<div align="center">Version 1.0.2</div>
 
 A template for writing a bachelors or masters thesis at the Hochschule Hannover, Faculty 4.
 
@@ -16,12 +16,12 @@ Choose the template in the typst web app and follow the instructions there.
 
 ### Terminal
 ```bash
-typst init @preview/modern-hsh-thesis:1.0.1
+typst init @preview/modern-hsh-thesis:1.0.2
 ```
 
 ### Import
 ```typ
-#import "@preview/modern-hsh-thesis:1.0.1": *
+#import "@preview/modern-hsh-thesis:1.0.2": *
 
 #show: project.with(
   title: "Beispiel-Titel",
@@ -80,13 +80,13 @@ While title, subtitle, author and many more parameters are self-explanatory, som
 
 
 ### Development Environment
-
+In WebStorm make sure to open a Git Bash Console.
 0. Install Just `winget install --id Casey.Just --exact`
 1. Install Typst https://github.com/typst-community/typst-install
 2. Clone the repository
 3. CD into the repository
 4. Run `git pull && just install && just install-preview` to install/update the template
-5. Run `typst init @local/modern-hsh-thesis:1.0.1 && typst compile modern-hsh-thesis/main.typ` to compile the template
+5. Run `typst init @local/modern-hsh-thesis:1.0.2 && typst compile modern-hsh-thesis/main.typ` to compile the template
 
 
 ## Additional Documentation

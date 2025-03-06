@@ -1,5 +1,5 @@
-#import "@preview/hydra:0.5.1": hydra
-#import "@preview/codly:1.0.0": *
+#import "@preview/hydra:0.6.0": hydra
+#import "@preview/codly:1.2.0": *
 
 #let small-line = line(length: 100%, stroke: 0.045em)
 
@@ -170,7 +170,7 @@
     }
 
   }
-  outline(depth: 3, indent: true)
+  outline(depth: 3, indent: auto)
   pagebreak()
 
   if(enable-abbildungsverzeichnis){

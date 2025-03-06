@@ -1,11 +1,11 @@
 #import "@preview/gloss-awe:0.0.5": *
 #import "abbreviations.typ": *
-#import "@preview/treet:0.1.0": *
+#import "@preview/treet:0.1.1": *
 #import "@preview/big-todo:0.2.0": *
-#import "@preview/gentle-clues:0.9.0": *
-#import "@preview/wrap-it:0.1.0": wrap-content
-#import "@preview/hydra:0.5.1": hydra
-#import "@preview/codly:1.0.0": *
+#import "@preview/gentle-clues:1.2.0": *
+#import "@preview/wrap-it:0.1.1": wrap-content
+#import "@preview/hydra:0.6.0": hydra
+#import "@preview/codly:1.2.0": *
 
 #let colorize = true
 

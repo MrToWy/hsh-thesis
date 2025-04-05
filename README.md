@@ -57,6 +57,9 @@ While title, subtitle, author and many more parameters are self-explanatory, som
 "**next-page**": Forces a page break before starting each new chapter
 "**none**": Chapters continue on the current page without interruption
 
+##### Parameter `custom-declaration-of-independence` (optional, String)
+A custom declaration of independence. If not provided, the default declaration will be used.
+
 
 ### Additional functions
 `customFunctions.typ` contains additional functions that can be used in the template.

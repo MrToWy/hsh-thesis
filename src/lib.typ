@@ -27,6 +27,7 @@
   enable-abbildungsverzeichnis: false,
   bibliography: none,
   chapter-break-mode: "default",
+  custom-declaration-of-independence: none,
   body,
 ) = {
   // Set the document's basic properties.
@@ -139,7 +140,12 @@
 
   align(bottom)[
   #align(center, text("Selbständigkeitserklärung", weight: "bold"))
-  Hiermit erkläre ich, dass ich die eingereichte Bachelorarbeit selbständig und ohne fremde Hilfe verfasst, andere als die von mir angegebenen Quellen und Hilfsmittel nicht benutzt und die den benutzten Werken wörtlich oder inhaltlich entnommenen Stellen als solche kenntlich gemacht habe.
+
+    #if(custom-declaration-of-independence != none){
+        text(custom-declaration-of-independence)
+    } else{
+        text("Hiermit erkläre ich, dass ich die eingereichte Bachelorarbeit selbständig und ohne fremde Hilfe verfasst, andere als die von mir angegebenen Quellen und Hilfsmittel nicht benutzt und die den benutzten Werken wörtlich oder inhaltlich entnommenen Stellen als solche kenntlich gemacht habe.")
+    }
 
 
   #v(5.2em, weak: true)

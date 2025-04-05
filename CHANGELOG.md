@@ -1,4 +1,7 @@
 # [v1.1.0](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.1.0)
+## Added
+- Added `custom-declaration-of-independence` parameter to allow for a custom declaration of independence.
+
 ## Changed
 - Upgraded codly to 1.3.0
 

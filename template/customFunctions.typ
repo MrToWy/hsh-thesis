@@ -5,7 +5,7 @@
 #import "@preview/gentle-clues:1.2.0": *
 #import "@preview/wrap-it:0.1.1": wrap-content
 #import "@preview/hydra:0.6.0": hydra
-#import "@preview/codly:1.2.0": *
+#import "@preview/codly:1.3.0": *
 
 #let colorize = true
 

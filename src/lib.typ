@@ -1,5 +1,5 @@
 #import "@preview/hydra:0.6.0": hydra
-#import "@preview/codly:1.2.0": *
+#import "@preview/codly:1.3.0": *
 
 #let small-line = line(length: 100%, stroke: 0.045em)
 

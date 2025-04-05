@@ -1,3 +1,7 @@
+# [v1.1.0](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.1.0)
+## Changed
+- Upgraded codly to 1.3.0
+
 # [v1.0.2](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.0.2)
 ## Changed
 - Upgraded Typst to version 0.13

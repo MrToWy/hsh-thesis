@@ -110,11 +110,21 @@
   v(1.6fr)
 
   if justify-title {
-    text(2em, weight: 700, title)
+    if type(title) == str {
+      text(2em, weight: 700, title)
+    }
+    else{
+      title
+    }
   }
   else{
     set par(justify: false)
-    text(2em, weight: 700, title)
+    if type(title) == str {
+      text(2em, weight: 700, title)
+    }
+    else{
+      title
+    }
   }
 
   v(1.2em, weak: true)

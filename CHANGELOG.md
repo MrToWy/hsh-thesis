@@ -2,6 +2,8 @@
 ## Added
 - Added `justify-title` parameter to allow for disabling the justification of the title.
 
+## Changed
+- Parameter `title` can now be a string or content. Content is useful if you want to use a custom size or color for the title.
 
 # [v1.1.0](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.1.0)
 ## Added

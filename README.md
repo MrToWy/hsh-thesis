@@ -49,7 +49,17 @@ typst init @preview/modern-hsh-thesis:1.1.1
 ```
 
 #### Import parameter
-While title, subtitle, author and many more parameters are self-explanatory, some parameters require additional context to understand their full meaning and usage. 
+While subtitle, author and many more parameters are self-explanatory, some parameters require additional context to understand their full meaning and usage. 
+
+##### Parameter `title` (optional, String or Fragment)
+The title of the thesis. This can be a string or content. \
+Content is useful if you want to use a custom size or color for the title. \
+Usage for content:
+```typ
+title: [
+    #text(weight: "semibold")[Example-Title]
+  ],
+```
 
 ##### Parameter `chapter-break-mode` (optional, String)
 "**default**": Ensures each chapter begins on a left-hand page, potentially inserting an additional blank page if necessary \

@@ -28,6 +28,7 @@
   bibliography: none,
   chapter-break-mode: "default",
   custom-declaration-of-independence: none,
+  justify-title: true,
   body,
 ) = {
   // Set the document's basic properties.
@@ -108,8 +109,14 @@
   align(left, image("Wortmarke.svg", width: 26%))
   v(1.6fr)
 
+  if justify-title {
+    text(2em, weight: 700, title)
+  }
+  else{
+    set par(justify: false)
+    text(2em, weight: 700, title)
+  }
 
-  text(2em, weight: 700, title)
   v(1.2em, weak: true)
   text(author)
   v(1.2em, weak: true)

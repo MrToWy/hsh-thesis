@@ -1,4 +1,4 @@
-#import "@preview/modern-hsh-thesis:1.1.0": *
+#import "@preview/modern-hsh-thesis:1.1.1": *
 
 #show: project.with(
   title: "Beispiel-Titel",

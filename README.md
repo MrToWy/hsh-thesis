@@ -5,7 +5,7 @@ All contributions (no matter if small) are always welcome.
 To see how you can help and where to start [see Contributing file](CONTRIBUTING.md).
 
 # The `modern-hsh-thesis` Package
-<div align="center">Version 1.1.0</div>
+<div align="center">Version 1.1.1</div>
 
 A template for writing a bachelors or masters thesis at the Hochschule Hannover, Faculty 4.
 
@@ -16,12 +16,12 @@ Choose the template in the typst web app and follow the instructions there.
 
 ### Terminal
 ```bash
-typst init @preview/modern-hsh-thesis:1.1.0
+typst init @preview/modern-hsh-thesis:1.1.1
 ```
 
 ### Import
 ```typ
-#import "@preview/modern-hsh-thesis:1.1.0": *
+#import "@preview/modern-hsh-thesis:1.1.1": *
 
 #show: project.with(
   title: "Beispiel-Titel",
@@ -60,6 +60,9 @@ While title, subtitle, author and many more parameters are self-explanatory, som
 ##### Parameter `custom-declaration-of-independence` (optional, String)
 A custom declaration of independence. If not provided, the default declaration will be used.
 
+##### Parameter `justify-title` (optional, boolean, default:true)
+Can be used to disable the justification of the title. Helpful for long titles.
+
 
 ### Additional functions
 `customFunctions.typ` contains additional functions that can be used in the template.
@@ -89,7 +92,7 @@ In WebStorm make sure to open a Git Bash Console.
 2. Clone the repository
 3. CD into the repository
 4. Run `git pull && just install && just install-preview` to install/update the template
-5. Run `typst init @local/modern-hsh-thesis:1.1.0 && typst compile modern-hsh-thesis/main.typ` to compile the template
+5. Run `typst init @local/modern-hsh-thesis:1.1.1 && typst compile modern-hsh-thesis/main.typ` to compile the template
 
 
 ## Additional Documentation

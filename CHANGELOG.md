@@ -1,3 +1,8 @@
+# [v1.1.1](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.1.1)
+## Added
+- Added `justify-title` parameter to allow for disabling the justification of the title.
+
+
 # [v1.1.0](https://github.com/MrToWy/hsh-thesis/releases/tag/v1.1.0)
 ## Added
 - Added `custom-declaration-of-independence` parameter to allow for a custom declaration of independence.

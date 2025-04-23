@@ -105,6 +105,26 @@ In WebStorm make sure to open a Git Bash Console.
 5. Run `typst init @local/modern-hsh-thesis:1.1.1 && typst compile modern-hsh-thesis/main.typ` to compile the template
 
 
+## FAQ
+### Change Hyphenation (Silbentrennung)
+```typst
+#set text(lang: "de")
+#set text(hyphenate: true)
+```
+
+### Disable Blocksatz
+```typst
+#set par(justify: false)
+```
+
+### Disable Blocksatz for headings only
+```typst
+#show heading: it => [
+  #set par(justify: false)
+  #it
+]
+```
+
 ## Additional Documentation
 
 Take a look at this complete Bachelor's thesis example using the `modern-hsh-thesis` template: [Bachelor's Thesis Example](https://github.com/MrToWy/Bachelorarbeit)
